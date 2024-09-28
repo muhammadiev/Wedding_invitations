@@ -1,0 +1,68 @@
+/* Global styles */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #d4f1f9; /* Light blue background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Invitation container */
+.invitation-container {
+    text-align: center;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.invitation-container h1 {
+    font-size: 2.5rem;
+    color: #333;
+}
+
+.invitation-container p {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+.location-link {
+    display: inline-block;
+    margin-top: 20px;
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    color: #fff;
+    background-color: #007BFF;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.location-link:hover {
+    background-color: #0056b3;
+}
+
+/* Dancing couple animation */
+.dancing-couple {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+}
+
+.dancing-couple img {
+    width: 100%;
+    animation: dance 2s infinite ease-in-out;
+}
+
+@keyframes dance {
+    0% { transform: translateX(0) rotate(0deg); }
+    25% { transform: translateX(-10px) rotate(-5deg); }
+    50% { transform: translateX(0) rotate(0deg); }
+    75% { transform: translateX(10px) rotate(5deg); }
+    100% { transform: translateX(0) rotate(0deg); }
+}
